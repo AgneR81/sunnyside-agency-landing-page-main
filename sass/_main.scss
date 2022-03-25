@@ -15,8 +15,16 @@ header {
             padding: 15px;
         }
         .dropdown {
-            display: block;
+            display: inline;
             margin-right: 15px;
+            .dropdown__content {
+                display: inline;
+                .header__components li { 
+                    display: inline;
+                    padding: 15px;
+                    
+                }
+            }
             
         }
     }

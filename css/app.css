@@ -110,8 +110,17 @@ header .header__wrap .logo {
 }
 
 header .header__wrap .dropdown {
-  display: block;
+  display: inline;
   margin-right: 15px;
+}
+
+header .header__wrap .dropdown .dropdown__content {
+  display: inline;
+}
+
+header .header__wrap .dropdown .dropdown__content .header__components li {
+  display: inline;
+  padding: 15px;
 }
 
 h1 {
