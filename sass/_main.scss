@@ -21,17 +21,48 @@ header {
                 display: inline;
                 .header__components li { 
                     display: inline;
-                    padding: 15px;
-                    
+                    padding: 5px;
+                    margin-left: 30px;
+                    a {
+                        color: white;
+                    }
+                    .contact {
+                        color: black;
+                        background-color: white;
+                        border-radius: 35%;
+                        padding: 8px;
+                    }
                 }
             }
             
+        }
+        .firsttitle {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 100px;
+            margin-left: calc(50% - 200px);
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 4vw;
+            @media (max-width: 800px) {
+                padding: 5px 20px;
+                max-width: 450px;
+                margin-left: calc(50% - 225px);
+            }
+            @media (max-width: 450px) {
+                width: 100%;
+                
+            }
+        }
+        .arrow {
+            position: absolute;
+            top: 200px;
+            left: 50%;
         }
     }
 }
 
 
 
-h1 {
-    color: red;
-}

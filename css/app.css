@@ -120,9 +120,49 @@ header .header__wrap .dropdown .dropdown__content {
 
 header .header__wrap .dropdown .dropdown__content .header__components li {
   display: inline;
-  padding: 15px;
+  padding: 5px;
+  margin-left: 30px;
 }
 
-h1 {
-  color: red;
+header .header__wrap .dropdown .dropdown__content .header__components li a {
+  color: white;
+}
+
+header .header__wrap .dropdown .dropdown__content .header__components li .contact {
+  color: black;
+  background-color: white;
+  border-radius: 35%;
+  padding: 8px;
+}
+
+header .header__wrap .firsttitle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 100px;
+  margin-left: calc(50% - 200px);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+@media (max-width: 800px) {
+  header .header__wrap .firsttitle {
+    padding: 5px 20px;
+    max-width: 450px;
+    margin-left: calc(50% - 225px);
+  }
+}
+
+@media (max-width: 450px) {
+  header .header__wrap .firsttitle {
+    width: 100%;
+  }
+}
+
+header .header__wrap .arrow {
+  position: absolute;
+  top: 200px;
+  left: 50%;
 }
