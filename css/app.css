@@ -140,7 +140,8 @@ header .header__wrap .firsttitle {
   display: flex;
   justify-content: center;
   top: 100px;
-  margin-left: calc(50% - 200px);
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -163,6 +164,150 @@ header .header__wrap .firsttitle {
 
 header .header__wrap .arrow {
   position: absolute;
+  display: flex;
   top: 200px;
   left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  width: 100%;
+}
+
+main .grid__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 450px) {
+  main .grid__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+main .grid__container .item1 {
+  display: flex;
+  background-color: #cccccc;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+main .grid__container .item1 .transform {
+  position: absolute;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main .grid__container .item1 .transform h2 {
+  padding: 20px 0 20px;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+main .grid__container .item1 .transform h3 {
+  padding: 20px 0 20px;
+  font-weight: bold;
+}
+
+main .grid__container .item1 .transform h3 a {
+  color: black;
+}
+
+main .grid__container .item2 {
+  background-image: url("/images/desktop/image-transform.jpg");
+  background-color: #cccccc;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+main .grid__container .item3 {
+  background-image: url("/images/desktop/image-stand-out.jpg");
+  background-color: #cccccc;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+main .grid__container .item4 {
+  background-color: #cccccc;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+main .grid__container .item5 {
+  background-image: url("/images/desktop/image-graphic-design.jpg");
+  background-color: #cccccc;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+main .grid__container .item6 {
+  background-image: url("/images/desktop/image-photography.jpg");
+  background-color: #cccccc;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.transform {
+  position: absolute;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.transform h2 {
+  padding: 20px 0 20px;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.transform h3 {
+  padding: 20px 0 20px;
+  font-weight: bold;
+}
+
+.transform h3 a {
+  color: black;
+}
+
+.itemtext {
+  position: absolute;
+  justify-content: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.itemtext h4 {
+  text-align: center;
+  padding: 20px;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.itemtext span {
+  font-size: 1vw;
 }
