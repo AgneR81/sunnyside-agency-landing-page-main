@@ -365,3 +365,20 @@ section .testimonials .clients .client1 h6, section .testimonials .clients .clie
   margin-top: 10px;
   font-size: 10px;
 }
+
+.photos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.photos img {
+  width: 100%;
+  float: left;
+}
+
+@media (max-width: 450px) {
+  .photos {
+    grid-template-columns: 1fr 1fr;
+  }
+}

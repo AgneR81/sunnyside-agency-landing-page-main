@@ -249,4 +249,18 @@ section {
             }
         }
     }
-}    
+}  
+
+.photos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    img {
+        width:100%; 
+        float:left;   
+    }
+    @media (max-width: 450px) {
+        grid-template-columns: 1fr 1fr;           
+    }
+    
+}
