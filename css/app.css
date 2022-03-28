@@ -318,6 +318,7 @@ section {
 
 section .testimonials {
   margin: auto;
+  margin: 50px;
 }
 
 section .testimonials .testimonials__wrapper {
@@ -329,9 +330,38 @@ section .testimonials .testimonials__wrapper {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2vw;
+  letter-spacing: 3px;
 }
 
 section .testimonials .clients {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 450px) {
+  section .testimonials .clients {
+    grid-template-columns: 1fr;
+  }
+}
+
+section .testimonials .clients img {
+  border-radius: 50%;
+  max-width: 15%;
+  margin-bottom: 25px;
+}
+
+section .testimonials .clients .client1, section .testimonials .clients .client2, section .testimonials .clients .client3 {
+  padding: 20px;
+}
+
+section .testimonials .clients .client1 h4, section .testimonials .clients .client2 h4, section .testimonials .clients .client3 h4 {
+  margin-top: 25px;
+  font-weight: 900;
+}
+
+section .testimonials .clients .client1 h6, section .testimonials .clients .client2 h6, section .testimonials .clients .client3 h6 {
+  margin-top: 10px;
+  font-size: 10px;
 }
