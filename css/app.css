@@ -131,8 +131,12 @@ header .header__wrap .dropdown .dropdown__content .header__components li a {
 header .header__wrap .dropdown .dropdown__content .header__components li .contact {
   color: black;
   background-color: white;
-  border-radius: 35%;
+  border-radius: 50%;
   padding: 8px;
+}
+
+header .header__wrap .dropdown .dropdown__content .header__components li .contact:hover {
+  background-color: rgba(91, 152, 231, 0.938);
 }
 
 header .header__wrap .firsttitle {
@@ -220,6 +224,12 @@ main .grid__container .item1 .transform h3 a {
   color: black;
 }
 
+main .grid__container .item1 .transform h3 a:hover {
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  text-decoration-thickness: 5px;
+}
+
 main .grid__container .item2 {
   background-image: url("/images/desktop/image-transform.jpg");
   background-color: #cccccc;
@@ -247,6 +257,12 @@ main .grid__container .item4 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+main .grid__container .item4 a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 5px;
 }
 
 main .grid__container .item5 {
@@ -381,4 +397,62 @@ section .testimonials .clients .client1 h6, section .testimonials .clients .clie
   .photos {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+footer {
+  display: flex;
+  background-color: #93e29b;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+footer .logofooter {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer .footer__nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer .footer__nav .footer__components li {
+  display: inline;
+  padding: 20px;
+  color: #93e29b;
+}
+
+footer .footer__nav .footer__components li a {
+  color: #103b14b7;
+}
+
+footer .footer__nav .footer__components li a:hover {
+  color: white;
+}
+
+footer .social {
+  position: absolute;
+  display: flex;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer .social img {
+  padding: 20px;
+}
+
+footer .social img:hover {
+  color: white;
 }

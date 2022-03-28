@@ -29,8 +29,11 @@ header {
                     .contact {
                         color: black;
                         background-color: white;
-                        border-radius: 35%;
+                        border-radius: 50%;
                         padding: 8px;
+                    }
+                    .contact:hover {
+                        background-color: rgba(91, 152, 231, 0.938);
                     }
                 }
             }
@@ -110,6 +113,11 @@ main{
                         padding:20px 0 20px ;
                         font-weight: bold;
                         a { color: black; }
+                        a:hover {
+                            text-decoration: underline;
+                            text-decoration-color: yellow;
+                            text-decoration-thickness: 5px;
+                        }
                     }
                 }
             }                          
@@ -138,6 +146,11 @@ main{
             background-repeat: no-repeat;
             background-size: cover;
             position: relative; 
+            a:hover {
+                text-decoration: underline;
+                text-decoration-color: red;
+                text-decoration-thickness: 5px;
+            }
          }
          .item5 {
             background-image: url("/images/desktop/image-graphic-design.jpg");
@@ -263,4 +276,62 @@ section {
         grid-template-columns: 1fr 1fr;           
     }
     
+}
+
+footer {
+    display: flex;
+    background-color: #93e29b;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+    // .footer__wrap {  
+    //     display: grid;  
+    //     grid-template-columns: 1fr;
+        .logofooter {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 100px;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            
+        }
+        .footer__nav {
+            position: absolute;
+            display: flex;
+            
+            justify-content: center;
+            top: 200px;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            
+            .footer__components li {
+                display: inline;
+                padding: 20px;
+                color: #93e29b;
+                a {
+                    color: #103b14b7;
+                }
+                a:hover {
+                    color: white;
+                }
+            }
+        }
+        .social {
+            position: absolute;
+            display: flex;
+            top: 300px;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            img {
+                padding: 20px;
+            }
+            img:hover {
+                color: white;
+            }
+            
+        }
+    // }    
 }
