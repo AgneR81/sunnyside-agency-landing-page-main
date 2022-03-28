@@ -311,3 +311,27 @@ main .grid__container .item6 {
 .itemtext span {
   font-size: 1vw;
 }
+
+section {
+  width: 100%;
+}
+
+section .testimonials {
+  margin: auto;
+}
+
+section .testimonials .testimonials__wrapper {
+  text-align: center;
+  justify-content: center;
+  color: grey;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+section .testimonials .clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

@@ -202,4 +202,29 @@ main{
             // }
         }
         
+}  
+
+section {
+    width: 100%;
+
+    .testimonials {
+        margin: auto;
+        .testimonials__wrapper {
+            text-align: center;
+            justify-content: center;
+            color: grey;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        
+            
+            
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 2vw; 
+        }
+        .clients {
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+        }
+    }
 }    
